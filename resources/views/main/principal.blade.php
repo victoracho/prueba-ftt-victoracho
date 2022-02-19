@@ -6,7 +6,7 @@
     <meta name="description" content="http://codesmx.com/">
     <meta name="author" content="github.com/nest-7">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Created By codesmx.com</title>
+    <title>Victoracho</title>
     {{-- icons --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     {{-- styles --}}
