@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class puesto extends Model
+class Puesto extends Model
 {
     public function empresa()
     {
