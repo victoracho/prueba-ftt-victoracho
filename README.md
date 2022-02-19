@@ -1,6 +1,7 @@
-# Crud con Laravel, Jquery y Bootstrap Para Ftt
+# Prueba de FTT con Laravel, Jquery y Bootstrap por Victoracho
 
-![Modelo ER]("https://ibb.co/N78T6Fd")
+Modelo ER:
+https://ibb.co/N78T6Fd
 
 ## Instalación
 1- Clonar el repositorio ya sea por HTTPS o SSH - Clone the repository either by HTTPS or SSH
