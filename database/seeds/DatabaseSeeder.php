@@ -1,6 +1,6 @@
  <?php
  
-    use App\Models\Cargo;
+    use App\Cargo;
     use Illuminate\Database\Seeder;
     use Illuminate\Support\Str;
      
