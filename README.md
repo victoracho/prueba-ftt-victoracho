@@ -1,13 +1,12 @@
-# Crud con Laravel, Jquery y Bootstrap
+# Prueba de FTT con Laravel, Jquery y Bootstrap por Victoracho
 
-![Vista Principal](https://res.cloudinary.com/dsc7j32bw/image/upload/v1549302582/repos/Crud%20with%20laravel/1-repo-free.png "Desarrollado por CodesMx")
-
-![Creando un producto](https://res.cloudinary.com/dsc7j32bw/image/upload/v1549302581/repos/Crud%20with%20laravel/4-repo-free.png "Desarrollado por CodesMx")
+Modelo ER:
+https://ibb.co/N78T6Fd
 
 ## Instalación
 1- Clonar el repositorio ya sea por HTTPS o SSH - Clone the repository either by HTTPS or SSH
 ```
-git clone https://github.com/nest-7/crud-laravel.git
+git clone github.com:victoracho/prueba-ftt-victoracho.git
 ```
 
 2.- Instalar las dependencias de Composer - Install the Composer dependencies
@@ -20,9 +19,9 @@ composer install
 npm install
 ```
 
-4.- Ingresar a la carpeta del proyecto y realizar una copia del archivo de las variables de entorno - Enter the project folder and make a copy of the environment variables file
+4.- Ingresar a la carpeta del proyecto y modificar los accesos a base de datos en el archivo .env
 ```bash
-cp .env.example .env
+ .env
 ```
 
 5.- Configurar nombre, usuario y contraseña de la base de datos en el archivo .env - Set name, user and password of the database in the .env file
@@ -59,17 +58,11 @@ npm run dev
 php artisan serve --port=8000
 ```
 
-## UI
-![Registro de usuario](https://res.cloudinary.com/dsc7j32bw/image/upload/v1549302580/repos/Crud%20with%20laravel/2-repo-free.png "Desarrollado por CodesMx")
 
-![Registro guardado](https://res.cloudinary.com/dsc7j32bw/image/upload/v1549302581/repos/Crud%20with%20laravel/5-repo-free.png "Desarrollado por CodesMx")
+11.- Correr seeder para crear los cargos
 
-![Index](https://res.cloudinary.com/dsc7j32bw/image/upload/v1549302581/repos/Crud%20with%20laravel/7-repo-free.png "Desarrollado por CodesMx")
+```bash
+php artisan db:seed
+```
 
 
-## Créditos - Credits
-* [Nst](https://github.com/nest-7 "GitHub del Creador")
-* [CodesMx](http://codesmx.com/)
-
-## Licencia - License
-GNU General Public License v3.0. Por favor, vea el [archivo de licencia](https://github.com/nest-7/Crud-Laravel/blob/master/LICENSE) para más información - Please see [License File](https://github.com/nest-7/Crud-Laravel/blob/master/LICENSE) for more information.
