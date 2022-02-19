@@ -42,6 +42,33 @@
       });
     });
 
+    $(d).on('submit', '.form_create_edit', function(e) {
+      e.preventDefault();
+      let my = $(this);
+      var url = my.attr('action'), method = my.attr('method');
+      $.ajax({
+        url: url,
+        method: method,
+        data: my.serialize(),
+        success: (r) => {
+          setTimeout(function() {
+            location.reload();
+          }, 2000);
+          $('.mi-modal').modal('hide');
+          toastr.info('Nueva empresa agregada', 'Todo se aplico correctamente');
+        }, error: (xhr) => {
+          var errs = xhr.responseJSON;
+          if ( $.isEmptyObject(errs) == false ) {
+            $.each( errs, function(k,v) {
+              $('#' + k)
+              .addClass('is-invalid')
+              .after('<span class="invalid-feedback"><strong>' + v + '</strong></span>');
+            });
+          }
+        }
+      });
+    });
+    
     $(d).on('submit', '.form_create_edit_puesto', function(e) {
       e.preventDefault();
       let my = $(this);
